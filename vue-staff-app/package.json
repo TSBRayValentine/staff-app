@@ -1,0 +1,58 @@
+{
+  "name": "vue-staff-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve --host localhost",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/vue-fontawesome": "^2.0.2",
+    "apexcharts": "^3.41.0",
+    "axios": "^0.21.1",
+    "buefy": "^0.9.13",
+    "cadesplugin-crypto-api": "^0.9.7",
+    "chart.js": "^2.9.4",
+    "dayjs": "^1.10.7",
+    "vue": "^2.7.14",
+    "vue-apexcharts": "^1.6.2",
+    "vue-chartjs": "^3.5.1",
+    "vue-pdf": "^4.3.0",
+    "vue-router": "^3.5.3",
+    "vue-the-mask": "^0.11.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.5.18",
+    "@vue/cli-plugin-eslint": "^4.5.18",
+    "@vue/cli-service": "^4.5.18",
+    "eslint": "^6.8.0",
+    "eslint-plugin-vue": "^9.15.1",
+    "node-sass": "^6.0.0",
+    "sass": "^1.43.5",
+    "sass-loader": "^10.2.0",
+    "vue-cli-plugin-element": "~1.0.1"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true,
+      "vue/setup-compiler-macros": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {
+      "vue/multi-word-component-names": "off",
+      "no-unused-vars": "off"
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

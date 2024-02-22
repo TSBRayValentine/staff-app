@@ -1,0 +1,149 @@
+// Import Bulma's core
+@import "~bulma/sass/utilities/_all";
+
+
+
+
+
+$hero-body-padding: 0rem;
+$table-sticky-header-height: 80vh;
+
+$gap: 0px;
+
+$size-1: 2.5rem;
+$size-2: 2rem;
+$size-3: 1.5rem;
+$size-4: 1rem;
+$size-5: 0.75rem;
+$size-6: 0.5rem;
+$size-7: 0.25rem;
+
+$size-5tbl: 0.8rem;
+
+// Set your colors
+$primary: #8c0046;
+$primary-light: findLightColor($primary);
+$primary-dark: #630032;
+$primary-invert: findColorInvert($primary);
+
+
+
+// Setup $colors to use as bulma classes (e.g. 'is-twitter')
+$colors: 
+(
+    "white": (
+        $white,
+        $black,
+    ),
+    "black": (
+        $black,
+        $white,
+    ),
+    "light": (
+        $light,
+        $light-invert,
+    ),
+    "dark": (
+        $dark,
+        $dark-invert,
+    ),
+    "primary": (
+        $primary,
+        $primary-invert,
+        $primary-light,
+        $primary-dark,
+    ),
+    "link": (
+        $link,
+        $link-invert,
+        $link-light,
+        $link-dark,
+    ),
+    "info": (
+        $info,
+        $info-invert,
+        $info-light,
+        $info-dark,
+    ),
+    "success": (
+        $success,
+        $success-invert,
+        $success-light,
+        $success-dark,
+    ),
+    "warning": (
+        $warning,
+        $warning-invert,
+        $warning-light,
+        $warning-dark,
+    ),
+    "danger": (
+        $danger,
+        $danger-invert,
+        $danger-light,
+        $danger-dark,
+    ),
+);
+
+// Links
+$link: $primary;
+$link-invert: $primary-invert;
+$link-focus-border: $primary;
+
+
+//! 
+$navbar-background-color: $primary;
+$navbar-item-color: $primary-light;
+//! 
+
+
+// Import Bulma and Buefy styles
+@import "~bulma";
+@import "~buefy/src/scss/buefy";
+
+
+.button {
+    border-radius: 15px;
+}
+.input {
+    border-radius: 15px;
+}
+
+.b-table .table th .th-wrap {
+    font-size: $size-5tbl;
+}
+
+.b-table .table td {
+    font-size: $size-5tbl;
+    padding: 0.2rem 0.2rem;
+}
+
+.b-select {
+    border-radius: 15px;
+    z-index: 0;
+}
+
+.icon.is-small {
+    height: 0.5rem;
+    width: 0.5rem;
+}
+
+.b-table .table th .th-wrap .icon {
+    margin-left: 0.2rem;
+    margin-right: 0; 
+    font-size: $size-5;
+}
+
+.tabs li {
+    border-bottom: solid 1px #630032;
+    display: block;
+}
+
+.b-tabs .tab-content {
+    position: relative;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    padding: 0rem;
+}
+

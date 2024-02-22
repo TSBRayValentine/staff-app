@@ -1,0 +1,12 @@
+node_modules/
+
+export/kpi/*.xlsx 
+export/vacation/*.xlsx 
+
+*.db
+*.DS_Store
+
+export_files/*.xlsx 
+export_files/kpi/*.xlsx 
+export_files/vacation/*.xlsx 
+

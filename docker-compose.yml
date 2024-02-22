@@ -1,0 +1,22 @@
+version: '3'
+services:
+  staff-app:
+    build:
+      context: ./express-staff-app
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000" # Порт, на котором будет запущено приложение staff-app
+    networks:
+      - internal
+
+  vue-staff-app:
+    build:
+      context: ./vue-staff-app
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80" # Порт, на котором будет запущено приложение vue-staff-app
+    networks:
+      - internal
+
+networks:
+  internal:

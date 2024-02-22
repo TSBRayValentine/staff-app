@@ -1,0 +1,11 @@
+{
+    "port": 5000,
+    "baseUrl": "http://localhost:5000",
+    "sessionSecret": "asdfeasdfsaef",
+
+   
+    "ui_url": "http://localhost:8080",
+    "log": false
+
+
+}
